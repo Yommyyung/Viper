@@ -10,17 +10,22 @@ body{
     background-color: whitesmoke;
     text-transform: capitalize;
     font-family: sans-serif;
-    font-size: larger;
+    font-size: 1rem;
     font-weight: bolder;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 nav{
-    background-color: teal;
+    background: teal;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 30px;
-    border-right: teal;
+    padding: 50px;
     display: flex;
     justify-content: space-evenly;
+    list-style-type: none;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -30,27 +35,67 @@ a{
     color: black;
     padding: 30px;
 }
-li:visited{
-    background-color: whitesmoke;
-}
-li:hover{
+
+li a:hover{
     background-color:darkcyan;
 }
-li:active{
-    background-color: rgb(2, 80, 67);
+li a:active{
+    background-color: teal;
 }
-h1{
+
+.chief{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+.container{
+    background: url("restaurant2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+
+figure{
+    width: 25%;
+}
+figure img{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 20px 0px 0px 20px;
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+}
+
+.figcaption{
+    margin: 50px;
     padding: 30px;
+    margin-top: 30px;
+    color: white;
+    font-size: 3vh;
+}
+
+.span{
+    font-size: 5vh;
+    color: rgb(244, 245, 248);
+}
+
+header h1{
+    margin: 200px 0px 20px 0px;
 }
 .head{
     text-align: center;
 }
-.header{
-    padding: 30px;
-}
+
 p{
     padding: 20px;
-    text-transform: uppercase;
+    text-align: center;
+}
+p a:hover{
+    text-decoration:  underline;
 }
 html{
     scroll-behavior: smooth;
@@ -66,59 +111,157 @@ input{
 
 .button{
     padding-bottom: 30px;
-    background-color: rgb(43, 43, 83);
+    background-color: rgb(167, 199, 79);
+    width: 200px;
 }
  form{
     font-size: 16px;
     margin-top: 100px;
     padding: 50px 0px 50px 0px;
-    border-radius: 8px;
+    
 } 
 
 .division{
-    background-color: rgb(54, 52, 52);
+    background-color: rgb(91, 119, 98);
     width: 400px;
     margin: auto;
     text-align: center; 
-}
-h2{
-    padding: 30px;
+    border-radius: 50%;
 }
 
+i{
+    font-size: 20px;
+    margin: 0px 50px 0px  1200px;
+    position: fixed;
+    bottom: 300px;
+    padding: 10px;
+    background-color:rgb(99, 98, 98) ;
+    border-radius: 20px;
+}
+
+
+
+  i:active{
+    background-color: red;
+    border: 1px solid black;
+}
+ i:hover{
+    background-color: lightgrey;
+}
+
+.food{
+    display: grid;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+span{
+    margin: 10px 0px 40px 0px;
+}
+
+.h1{
+    text-align: center;
+}
 .menu{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    padding: 5px;
-    margin-left: 150px;
+    margin: auto;
 }
 
-h1{
-    text-align: center;
-    padding-top: 100px;
-}
-i{
-    font-size: 30px;
-    float: right;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 100px;
-    margin: 0px 20px 0px 20px;
-    background-color: white;
-    border: none;
-    position: sticky;
-    top: 0;
-}
-span, i{
-    position: sticky;
-    bottom: 100px;
-}
 footer{
-    font-size: large;
     text-align: center;
+    background-color: black;
+    color: #fff;
     padding: 100px;
-    color: whitesmoke;
-    background-color: rgb(11, 12, 11);
-    margin: 50px 0px 0px 0px ;
+}
+
+ .menu img, .head img{
+    width: 100%;
   }
 
+ 
+
+ @media screen and (max-width: 500px){
+    nav{
+        background-color: teal;
+        padding: 20px;
+        position: unset;
+    }
+
+    li a:hover{
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    
+    .menu{
+        display: block;
+    }
+    header h1{
+        margin: 40px 0px 10px 0px;
+    }
+
+    .form h2{
+        justify-content: center;
+    }
+    .head h2{
+        justify-content: center;
+    }
+    h2{
+        justify-content: start;
+    }
+
+    figure{
+        width: 10%;
+    }
+    i{
+        margin: 0;
+    }
+    span{
+        text-align: center;
+    }
+
+    .h1{
+        font-size: 3vh;
+    }
+
+    footer{
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+     
+    h2{
+        justify-content: center;
+    }
+
+    i{
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2{
+    justify-content: center;
+    padding: 50px;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+}

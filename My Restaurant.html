@@ -4,19 +4,28 @@
         <link rel="stylesheet" href="My Restaurant.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-         <nav class="none"  id="arrow">
-            <a href="#about">About us</a>
-            <a href="#menu">Menu </a>
-            <a href="#contact">Contact</a>
+    <body  id="arrow">
+         <nav class="none"  >
+            <li><a href="#about">About us</a></li>
+            <li><a href="#menu">Menu </a></li>
+            <li><a href="#contact">Contact</a></li>
     </nav>
-       <span>
-         <a href="#down"><i class="fa-solid fa-arrow-down"></i></a>
-       </span>
-        
-        <header class="head">
+
+    <div class="container">
+      <div class="chief">
+         <figure>
+            <img src="jeff.png" width="100" alt="">
+         </figure>
+         <span class="span">Yung Lee</span>
+       </div>
+      <span class="figcaption">The chief executive officer</span>
+    </div>
+
+    
+
+        <header class="head" >
             <h1>Welcome to my Restaurant</h1>
-            <img src="restaurant.jpg" width="1000" height="500" alt="Restaurant">
+            <img src="restaurant.jpg" width="1000" height="500" alt="Restaurant" ">
             <h2 id="about">About us</h2>
             <img src="forest2.jpg" width="1000" height="500" alt="Restaurant">
             <p> it was founded in 2008 by Bassey emmanuel,
@@ -37,133 +46,140 @@
             <p>we deliver food safely and on time</p>
             <p>we offer our Restaurant as venue for special event when needed </p>
         </header>
-<div class="division">
-    <form action="" class="form" id="contact">
+<div class="division" id="contact">
+    <form action="" class="form">
         <h2>ORDER NOW</h2>
         <input type="text" placeholder="name">
         <input type="tel" placeholder="234">
         <input type="text" placeholder="address">
-        <p class="para">terms and privacy</p>
-        <input class="button" type="submit" value="order">
+        <p class="para"><a href="">terms and privacy</a></p>
+        <input class="button" id="btn" type="submit" value="order">
         
     </form>
 </div>
 
-<header>
-   <h1 id="menu">these are some of the food we have in my the restsurant:
+<header id="menu">
+   <h1 class="h1">these are some of the food we have in my the resturant:
 </h1>
 
 </header>
-   <h2>snacks like:</h2>
+<div>
+   <h2>snacks like</h2>
    <div class="menu">
-<figure>
-   <img src="/doughnut.jpeg" width="300" alt="">
-   <figcaption>doughnut</figcaption>
-</figure>
-<figure>
-   <img src="/meat pie.jpeg"width="300" alt="">
-   <figcaption>meat pie</figcaption>
-</figure>
-<figure>
-   <img src="/sharwama.jpeg"width="300" alt="">
-   <figcaption>sharwama</figcaption>
-</figure>
-<figure>
-   <img src="/ham burger copy.jpeg"width="300" alt="" >
-   <figcaption>ham burger</figcaption>
-</figure>
-<figure>
-   <img src="/pizza.jpeg"width="300" alt="">
-   <figcaption>pizza</figcaption>
-</figure>
-<figure>
-   <img src="/ice cream.jpeg"width="300" alt="">
-   <figcaption>ice cream</figcaption>
-</figure>
-
+         <div class="food">
+            <img src="/doughnut.jpeg" width="300" alt="">
+            <span>doughnut</span>
+         </div>
+         <div  class="food">
+            <img src="/meat pie.jpeg"width="300" alt="">
+          <span>meat pie</span>
+         </div>
+         <div  class="food">
+            <img src="/sharwama.jpeg"width="300" alt="">
+            <span>sharwama</span>
+         </div>
+            <div  class="food">
+               <img src="/ham burger copy.jpeg"width="300" alt="" >
+               <span>ham burger</span>
+            </div>
+          <div  class="food">
+            <img src="/pizza.jpeg"width="300" alt="">
+            <span>pizza</span>
+          </div>
+           <div  class="food">
+             <img src="/ice cream.jpeg"width="300" alt="">
+            <span>ice cream</span> 
+          </div>
+   </div>
 </div>
-<h2>food like:</h2>
-<div class="menu">
-<figure>
-  
-   <img src="/jollof and chicken.jpeg"width="300" alt="">
-   <figcaption>jollof and chicken</figcaption>
-</figure>
-<figure>
-   <img src="/Fried rice and Chicken.jpeg"width="300" alt="">
-   <figcaption>Fried rice and Chicken</figcaption>
-</figure>
-<figure>
-   <img src="/fufu.jpg"width="300" alt="">
-   <figcaption>fufu</figcaption>
-</figure>
-<figure>
-   <img src="/Amala.jpeg"width="300" alt="">
-   <figcaption>Amala</figcaption>
-</figure>
-<figure>
-   <img src="/eba.jpg"width="300" alt="">
-   <figcaption>eba</figcaption>
-</figure>
-<figure>
-   <img src="/sandwich.jpeg"width="300" alt="">
-   <figcaption>sandwich</figcaption>
-</figure>
+   <div>
+      <h2>food like</h2>
+   <div class="menu">
+      <div class="food">
+         <img src="/jollof and chicken.jpeg"width="300" alt="">
+         <span>jollof and chicken</span>
+      </div>
+      <div class="food">
+         <img src="/Fried rice and Chicken.jpeg"width="300" alt="">
+         <span>Fried rice and Chicken</span>
+      </div>
+      <div class="food">
+         <img src="/fufu.jpg"width="300" alt="">
+        <span>fufu</span>
+      </div>
+      <div class="food">
+         <img src="/Amala.jpeg"width="300" alt="">
+         <span>Amala</span>
+      </div>
+      <div class="food">
+         <img src="/Amala.jpeg"width="300" alt="">
+          <span>Amala</span>
+      </div>
+
+      <div class="food">
+        <img src="/eba.jpg"width="300" alt="">
+        <span>eba</span>
+      </div>
+      <div class="food">
+         <img src="/sandwich.jpeg"width="300" alt="">
+         <span>sandwich</span>
+      </div>
 </div>
-<h2>soups like:</h2>
+   </div>
+<div>
+    <h2>soups like</h2>
+    <div class="menu">
+      <div class="food">
+         <img src="/egusi.jpg"width="300" alt="">
+         <span>egusi</span>
+      </div>
+      <div class="food">
+         <img src="/groundnut soup.jpeg"width="300" alt="">
+         <span>groundnut soup</span>
+      </div>
+      <div class="food">
+         <img src="/vegetable soup.jpeg"width="300" alt="">
+         <span>vegetable soup</span>
+      </div>
+    </div>
+
+<div>
+   <h2>meat like</h2>
 <div class="menu">
-<figure>
-  
-   <img src="/egusi.jpg"width="300" alt="">
-   <figcaption>egusi</figcaption>
-</figure>
-<figure>
-   <img src="/groundnut soup.jpeg"width="300" alt="">
-   <figcaption>groundnut soup</figcaption>
-</figure>
-<figure>
-   <img src="/vegetable soup.jpeg"width="300" alt="">
-   <figcaption>vegetable soup</figcaption>
-</figure>
+   <div class="food">
+      <img src="/grilled chicken.jpeg"width="300" alt="">
+      <span>grilled chicken</span>
+   </div>
+   <div class="food">
+      <img src="/pepper grilled chicken.jpeg"width="300" alt="">
+      <span>pepper grilled chicken</span>
+   </div>
+   <div class="food">
+      <img src="/chicken nugget.jpeg"width="300" alt="">
+      <span>chicken nugget</span>
+   </div>
+</div>
 </div>
 
-<h2>meat like:</h2>
-
+<div>
+   <h2>drinks like</h2>
 <div class="menu">
-<figure>
-   
-   <img src="/grilled chicken.jpeg"width="300" alt="">
-   <figcaption>grilled chicken</figcaption>
-</figure>
-<figure>
-   <img src="/pepper grilled chicken.jpeg"width="300" alt="">
-   <figcaption>pepper grilled chicken</figcaption>
-</figure>
-<figure>
-   <img src="/chicken nugget.jpeg"width="300" alt="">
-   <figcaption>chicken nugget</figcaption>
-</figure>
+   <div class="food">
+      <img src="/wine.jpeg"width="300" alt="">
+      <span>wine</span>
+   </div>
+   <div class="food">
+      <img src="/champagne.jpeg"width="300" alt="">
+     <span>champagne.jpeg</span>
+   </div>
 </div>
-
-<h2>drinks like:</h2>
-<div class="menu">
-<figure>
-  
-   <img src="/wine.jpeg"width="300" alt="">
-   <figcaption>wine</figcaption>
-</figure>
-<figure>
-   <img src="/champagne.jpeg"width="300" alt="">
-   <figcaption>champagne.jpeg</figcaption>
-</figure>
 </div>
 
 <a href="#arrow">
    <i class="fa-solid fa-arrow-up"></i>
-</a>
-    <footer id="down">
-        <p> Bassey Restaurant &copy; 2024 asaba, delta state</p>
-    </footer>
-    
+</a> 
+
+<footer>Margaret Agim restaurant &copy; all right reserved</footer>
+    <script src="retaurant.js"></script>
     </body>
 </html>
